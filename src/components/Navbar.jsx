@@ -29,15 +29,15 @@ export default function Navbar() {
   ];
 
   return(
-      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-slate-800 fixed nav">
+      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#1f1e1e] fixed nav">
 
-        <div className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <div to="home" className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer">
           Portfolio
         </div>
 
         <ul className="hidden md:flex ml-auto">
           {links.map(({id, link}) => (
-            <li key={id} className="px-4 cursor-pointer font-sans text-white hover:animate-pulse text-[1rem]">
+            <li key={id} className="px-4 cursor-pointer font-sans text-white hover:animate-pulse text-[1.25rem]">
               <Link to="link" smooth duration={500}>
                 {link}
               </Link>
@@ -45,13 +45,13 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div onClick={handleSubmit} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
+        <div onClick={handleSubmit} className="cursor-pointer pr-4 z-10 text-white md:hidden">
           {open ? <FaTimes size={30}/> : <FaBars size={30}/>}
 
           {open && (
-          <ul className="absolute right-0 shadow-2xl mr-2 mt-2 rounded-lg flex flex-col justify-center items-center bg-gradient-to-b from-slate-500 to-slate-600 text-gray-200">
+          <ul className="absolute right-0 shadow-2xl mr-2 mt-2 rounded-lg flex flex-col justify-center items-center text-black bg-slate-300 ">
             {links.map(({id, link}) =>(
-              <li key={id} className="px-10 cursor-pointer py-2 text-xl rounded-sm hover:bg-slate-100 hover:text-slate-600 w-full justify-center items-center">
+              <li key={id} className="px-10 cursor-pointer py-2 text-xl hover:bg-[#494848] hover:text-white w-full justify-center items-center border-black border-[0.1px]">
                 <Link onClick={handleSubmit} to={link} smooth duration={500}>
                   {link}
                 </Link>
