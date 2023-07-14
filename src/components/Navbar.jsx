@@ -49,9 +49,9 @@ export default function Navbar() {
           {open ? <FaTimes size={30}/> : <FaBars size={30}/>}
 
           {open && (
-          <ul className="absolute right-0 shadow-2xl mr-2 mt-2 rounded-lg flex flex-col justify-center items-center text-black bg-slate-300 ">
+          <ul className="absolute right-0 shadow-2xl mr-2 mt-2 rounded-lg flex flex-col justify-center items-center text-black bg-[#fff] ">
             {links.map(({id, link}) =>(
-              <li key={id} className="px-10 cursor-pointer py-2 text-xl hover:bg-[#494848] hover:text-white w-full justify-center items-center border-black border-[0.1px]">
+              <li key={id} className="px-10 cursor-pointer py-2 text-xl hover:bg-[#494848] font-[600] font-serif hover:text-white w-full justify-center items-center border-black border-[0.1px]">
                 <Link onClick={handleSubmit} to={link} smooth duration={500}>
                   {link}
                 </Link>
