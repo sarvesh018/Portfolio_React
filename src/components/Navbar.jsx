@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.svg";
+import {links} from "../components/Constants"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,30 +11,11 @@ export default function Navbar() {
     setOpen(!open);
   };
 
-  const links = [
-    {
-      id: 1,
-      link: "Home",
-    },
-    {
-      id: 2,
-      link: "About",
-    },
-    {
-      id: 3,
-      link: "Projects",
-    },
-    {
-      id: 4,
-      link: "Contact",
-    },
-  ];
-
   return(
       <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#1f1e1e] fixed nav">
 
-        <div to="home" className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer">
-          Portfolio
+        <div to="home" className="font-extrabold flex flex-row justify-center items-center text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer">
+          <img src={logo} className="w-12 h-12"/> Portfolio
         </div>
 
         <ul className="hidden md:flex ml-auto">

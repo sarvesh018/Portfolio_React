@@ -3,9 +3,11 @@ import Developer from "../assets/developer.gif";
 import github from "../assets/github.svg";
 import ReactTyped from "react-typed";
 import linkedin from "../assets/linkedin.svg";
+import leetcode from "../assets/leetcodeDark.svg";
+import { works } from "./Constants";
 
 const Home = () => {
-  const works = ["Full Stack Developer", "Leetcoder", "Competitive Programmer"];
+  
   return (
     <div name="home" className="h-screen bg-black text-white home">
       <div className=" max-w-screen-lg h-full mx-auto flex flex-col sm:flex-row items-center justify-center md:ml-auto">
@@ -21,7 +23,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row py-4 gap-2">
             <button
               type="button" 
-              class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-purple-400 hover:to-pink-600 ... rounded-[0.5rem] md:rounded-xl w-20 md:w-[7rem] text-[1.2rem] md:text-lg md:font-bold text-white font-semibold "
+              class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-600 hover:to-blue-700 ... rounded-[0.5rem] md:rounded-xl w-20 md:w-[7rem] text-[1.2rem] md:text-lg md:font-bold text-white font-semibold "
             >
               <a className="px-1 py-1" href="https://drive.google.com/file/d/1_L-JCKVCP5rp3YfR6iBRjrgqj39zB5m5/view?usp=sharing" target="_blank">Resume</a>
             </button>
@@ -38,6 +40,15 @@ const Home = () => {
               >
                 <img
                   src={linkedin}
+                  className="md:w-[2.5rem] md:h-[2.5rem] w-[2rem] h-[2rem] cursor-pointer hover:scale-125 duration-500"
+                />
+              </a>
+              <a
+                href="https://leetcode.com/sarvesh33/"
+                target="_blank"
+              >
+                <img
+                  src={leetcode}
                   className="md:w-[2.5rem] md:h-[2.5rem] w-[2rem] h-[2rem] cursor-pointer hover:scale-125 duration-500"
                 />
               </a>
