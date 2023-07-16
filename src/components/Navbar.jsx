@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.svg";
@@ -6,13 +6,27 @@ import {links} from "../components/Constants"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scroll, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () =>{
+      const isScrolled = window.scrollY>0;
+      setScrolled(isScrolled);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.addEventListener('scroll',handleScroll);
+      
+    };
+  }, []);
 
   const handleSubmit = () => {
     setOpen(!open);
   };
 
   return(
-      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#1f1e1e] fixed nav">
+      <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed nav ${scroll ? "bg-[#303237] duration-100" : "bg-black"}`}>
 
         <div to="home" className="font-extrabold flex flex-row justify-center items-center text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer">
           <img src={logo} className="w-12 h-12"/> Portfolio
@@ -21,7 +35,7 @@ export default function Navbar() {
         <ul className="hidden md:flex ml-auto">
           {links.map(({id, link}) => (
             <li key={id} className="px-4 cursor-pointer font-sans text-white hover:animate-pulse text-[1.25rem]">
-              <Link to="link" smooth duration={500}>
+              <Link to={link} smooth duration={500}>
                 {link}
               </Link>
             </li>
