@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed nav ${scroll ? "bg-[#303237] duration-100" : "bg-black"}`}>
 
         <div to="home" className="font-extrabold flex flex-row justify-center items-center text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer">
-          <img src={logo} className="w-12 h-12"/> Portfolio
+          <img src={logo} className="w-12 h-12"/> <Link to="Home" smooth duration={500}> Portfolio</Link>
         </div>
 
         <ul className="hidden md:flex ml-auto">
