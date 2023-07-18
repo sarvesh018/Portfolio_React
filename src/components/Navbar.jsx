@@ -32,7 +32,7 @@ export default function Navbar() {
           <img src={logo} className="w-12 h-12"/> <Link to="Home" smooth duration={500}> Portfolio</Link>
         </div>
 
-        <ul className="hidden md:flex ml-auto">
+        <ul className="hidden md:flex">
           {links.map(({id, link}) => (
             <li key={id} className="px-4 cursor-pointer font-sans text-white hover:animate-pulse text-[1.25rem]">
               <Link to={link} smooth duration={500}>

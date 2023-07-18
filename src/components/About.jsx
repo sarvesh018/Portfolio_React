@@ -6,13 +6,13 @@ const About = () => {
   return (
     <div name="About" className="h-screen bg-black text-white">
       <div className="max-w-screen-xl h-full mx-auto flex flex-col items-center justify-center md:ml-auto gap-5">
-        <div className="font-extrabold py-5">
-          <h1 className="text-2xl mt-4">Readme.md</h1>
+        <div className="py-5">
+          <h1 className="text-2xl mt-10 md:mt-4 font-[algerian]">Readme.md</h1>
         </div>
         <div className="flex justify-center items-center flex-col md:flex-row">
           <div className="w-2/3 md:w-1/2 md:mb-0 mb-5 flex justify-center items-center">
             <img
-              className="w-3/5 rounded-full shadow-2xl hover:border-4 hover:border-[#d9cfcf] duration-300"
+              className="w-3/5 rounded-full shadow-slate-300 shadow-lg hover:border-4 hover:border-[#d9cfcf] duration-300"
               src={profile}
             />
           </div>
