@@ -8,6 +8,10 @@ import nodejs from "../assets/nodejs.png"
 import css from "../assets/css.png"
 import tailwind from "../assets/tailwind.png"
 import javascript from "../assets/javascript.png"
+import mui from "../assets/mui.png"
+import ub_express from "../assets/UB_Express.png"
+import expense from "../assets/expense_tracker.png"
+import weather from "../assets/weather.png"
 
 
 export const links = [
@@ -82,4 +86,30 @@ export const links = [
       link: "CSS",
       logoSrc: css,
     },
+    {
+      id: 11,
+      link: "MUI",
+      logoSrc: mui,
+    }
+ ];
+
+ export const projects = [
+  {
+    id: 1, title: "UB-Express", technologies: "Reactjs | Nodejs | Expressjs | Mongodb", 
+    desc: "A food delivery platform to streamline and enhance the process of ordering food from hostel",
+    code: "https://github.com/sarvesh018/Food_Delivery_Application",
+    srcImg: ub_express,
+  },
+  {
+    id: 2, title: "Expense Tracker", technologies: "Reactjs | Material UI", 
+    desc: "Streamline financial management for effective budgeting and planning",
+    code: "https://github.com/sarvesh018/Weather_Forecast",
+    srcImg: expense,
+  },
+  {
+    id: 3, title: "Weather Forecast", technologies: "HTML | CSS | JavaScript", 
+    desc: "Provide precise and up-to-date weather forecasts through a user-centric application",
+    code: "https://github.com/sarvesh018/expense-tracker",
+    srcImg: weather,
+  }
  ];

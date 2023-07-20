@@ -1,6 +1,5 @@
 import React from "react";
 import { skills } from "./Constants";
-import c from "../assets/c.png";
 
 const Skills = () => {
   return (
@@ -12,8 +11,8 @@ const Skills = () => {
         <div className="flex flex-wrap md:w-2/3 justify-center items-center h-2/3">
           {skills.map(({ link, id, logoSrc}) => (
             <li key={id} className="flex ">
-              <div className="px-2 py-2 md:px-4 md:py-4 mx-4 my-2 w-[8rem] bg-slate-800 shadow-[#f1edd9] shadow-lg  flex justify-center items-center flex-col gap-3 rounded-lg scal hover:scale-110 duration-300">
-                <div className="hover:animate-ping  duration-500">
+              <div className="px-2 py-2 md:px-4 md:py-4 mx-4 my-2 w-[8rem] bg-[#371B58] shadow-[#7858A6] shadow-lg  flex justify-center items-center flex-col gap-3 rounded-lg hover:scale-110 duration-300">
+                <div className="hover:animate-spin  duration-100">
                   <img className="lg:w-[3rem] lg:h-[3rem] w-10 h-10" src={logoSrc} />
                 </div>
                 {link}
