@@ -12,6 +12,9 @@ import mui from "../assets/mui.png"
 import ub_express from "../assets/UB_Express.png"
 import expense from "../assets/expense_tracker.png"
 import weather from "../assets/weather.png"
+import email from "../assets/email.png";
+import loc from "../assets/loc.png";
+import phone from "../assets/phone.png";
 
 
 export const links = [
@@ -113,3 +116,9 @@ export const links = [
     srcImg: weather,
   }
  ];
+
+ export const contact = [
+  {id:1, src:phone, head:"Call Me:", text:"+91 8827034174"},
+  {id:2, src:email, head:"Email Me:", text:"sarveshc111@gmail.com"},
+  {id:3, src:loc, head:"Location:", text:"Indore, M.P"},
+ ]
