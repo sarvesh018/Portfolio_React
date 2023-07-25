@@ -1,7 +1,26 @@
-import React from "react";
+import React,{useRef} from "react";
 import { contact } from "./Constants";
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0wytgql', 'template_oqvtfic', form.current, 'Jm768NroevOrHWG_q')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
   return (
     <div name="Contact" className="h-full bg-black">
       <div className="text-white flex flex-col items-center justify-center w-full">
@@ -26,40 +45,39 @@ const Contact = () => {
           </div>
           <div className="md:w-1/2 w-full m-auto">
             <div>
-              <form action="">
+              <form onSubmit={sendEmail} ref={form}>
                 <div className="flex flex-col gap-4 p-6  text-white">
                   <div className="md:w-4/5">
                     <div className="flex flex-col md:flex-row gap-4 justify-between mb-4">
                       <input
                         className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                        type="text"
+                        type="text" name="from_name"
                         placeholder="Enter Your Name"
                       />
                       <input
                         className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                        type="email"
+                        type="email" name="user_email"
                         placeholder="Enter Your Email"
                       />
                     </div>
                     <div className="flex flex-col gap-4">
                       <input
                         className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                        type="text"
+                        type="text" name="subject"
                         placeholder="Enter Subject"
                       />
                       <textarea
                         className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border hover:resize-y"
-                        type="text"
+                        type="text" name="message"
                         placeholder="Your Message"
                       />
                     </div>
                     <div className="my-4">
-                      <button
-                        type="button"
+                      <input
+                        type="submit" value="Send"
                         class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-600 hover:to-blue-700 py-2 px-2 rounded-[0.5rem] md:rounded-xl w-20 md:w-[7rem] text-[1.2rem] md:text-lg md:font-bold text-white font-semibold "
                       >
-                        Submit
-                      </button>
+                      </input>
                     </div>
                   </div>
                 </div>
