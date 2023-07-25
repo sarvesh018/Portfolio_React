@@ -15,6 +15,7 @@ import weather from "../assets/weather.png"
 import email from "../assets/email.png";
 import loc from "../assets/loc.png";
 import phone from "../assets/phone.png";
+import sql from "../assets/sql.svg";
 
 
 export const links = [
@@ -93,6 +94,11 @@ export const links = [
       id: 11,
       link: "MUI",
       logoSrc: mui,
+    },
+    {
+      id:12, 
+      link: "sql", 
+      logoSrc: sql,
     }
  ];
 

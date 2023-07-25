@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="md:w-1/2 w-full m-auto">
             <div>
               <form action="">
-                <div className="flex flex-col gap-4 p-8  text-white">
+                <div className="flex flex-col gap-4 p-6  text-white">
                   <div className="md:w-4/5">
                     <div className="flex flex-col md:flex-row gap-4 justify-between mb-4">
                       <input
