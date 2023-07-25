@@ -99,7 +99,7 @@ export const links = [
  export const projects = [
   {
     id: 1, title: "UB-Express", technologies: "Reactjs | Nodejs | Expressjs | Mongodb", 
-    desc: "A food delivery platform to streamline and enhance the process of ordering food from hostel.",
+    desc: "A food delivery platform to streamline and enhance the process of ordering food.",
     code: "https://github.com/sarvesh018/Food_Delivery_Application",
     srcImg: ub_express,
   },

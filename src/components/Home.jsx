@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Developer from "../assets/developer.gif";
-import github from "../assets/github.svg";
+import github from "../assets/git.png";
 import ReactTyped from "react-typed";
 import linkedin from "../assets/linkedin.svg";
 import leetcode from "../assets/leetcodeDark.svg";
@@ -54,7 +54,7 @@ const Home = () => {
               <a href="https://github.com/sarvesh018" target="_blank">
                 <img
                   src={github}
-                  className="md:w-[2.5rem] md:h-[2.5rem] w-[2rem] h-[2rem] cursor-pointer invert hover:scale-125 duration-200"
+                  className="md:w-[2.5rem] md:h-[2.5rem] w-[2rem] h-[2rem] cursor-pointer hover:scale-125 duration-200"
                 />
               </a>
               <a

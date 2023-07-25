@@ -1,16 +1,16 @@
 import React from "react";
 import { projects } from "./Constants";
-import github from "../assets/github.svg";
+import github from "../assets/git.png";
 
 const Projects = () => {
 
   return (
     <div name="Projects" className="h-full bg-black py-28">
       <div className="flex h-full flex-col justify-center items-center">
-        <div className="font-[algerian] h-1/3 text-2xl pb-20 pt-8 font flex items-center text-white justify-center">
+        <div className="font-[algerian] h-1/3 text-2xl pb-16 pt-8 font flex items-center text-white justify-center">
           <div>PROJECTS</div>
         </div>
-        <div className="h-4/5  visible">
+        <div className="h-4/5 md:mx-10">
           <div className="flex flex-col lg:flex-row justify-center items-center font-sans gap-4">
             {projects.map(({ id, title, technologies, desc, code, srcImg }) => (
               <li
@@ -20,7 +20,7 @@ const Projects = () => {
                 <div className="bg-[#0b1b36] border-[#585757b8] border-[1px] mx-4 px-2 py-4 rounded-2xl text-white hover:shadow-2xl hover:shadow-[#44597d]">
                   <div className="flex justify-center items-center pb-4">
                     <img
-                      className="w-[20rem] h-[15rem] max-sm:w-[15rem] max-sm:h-[15rem] rounded-xl"
+                      className="w-[20rem] h-[15rem] max-sm:w-full max-sm:h-[15rem] rounded-xl"
                       src={srcImg}
                     />
                   </div>
@@ -44,7 +44,7 @@ const Projects = () => {
                       >
                         <img
                           src={github}
-                          className="w-8 h-8 invert max-sm:w-6 max-sm:h-6"
+                          className="w-8 h-8 max-sm:w-6 max-sm:h-6"
                         />
                         <div className="font-bold max-sm:text-sm">
                           Source code

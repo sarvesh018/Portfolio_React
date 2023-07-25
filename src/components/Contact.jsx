@@ -28,37 +28,39 @@ const Contact = () => {
             <div>
               <form action="">
                 <div className="flex flex-col gap-4 p-8  text-white">
-                  <div className="flex flex-col md:flex-row gap-4 justify-between">
-                    <input
-                      className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                      type="text"
-                      placeholder="Enter Your Name"
-                    />
-                    <input
-                      className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                      type="email"
-                      placeholder="Enter Your Email"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4">
-                    <input
-                      className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
-                      type="text"
-                      placeholder="Enter Subject"
-                    />
-                    <textarea
-                      className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border hover:resize-y"
-                      type="text"
-                      placeholder="Your Message"
-                    />
-                  </div>
-                  <div>
-                    <button
-                      type="button"
-                      class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-600 hover:to-blue-700 py-2 px-2 rounded-[0.5rem] md:rounded-xl w-20 md:w-[7rem] text-[1.2rem] md:text-lg md:font-bold text-white font-semibold "
-                    >
-                      Submit
-                    </button>
+                  <div className="md:w-4/5">
+                    <div className="flex flex-col md:flex-row gap-4 justify-between mb-4">
+                      <input
+                        className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
+                        type="text"
+                        placeholder="Enter Your Name"
+                      />
+                      <input
+                        className="p-4 md:w-1/2 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
+                        type="email"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-4">
+                      <input
+                        className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border"
+                        type="text"
+                        placeholder="Enter Subject"
+                      />
+                      <textarea
+                        className="p-4 rounded-xl bg-[#0b1b36] placeholder-[#959494] border-[#585757b8] border hover:resize-y"
+                        type="text"
+                        placeholder="Your Message"
+                      />
+                    </div>
+                    <div className="my-4">
+                      <button
+                        type="button"
+                        class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-600 hover:to-blue-700 py-2 px-2 rounded-[0.5rem] md:rounded-xl w-20 md:w-[7rem] text-[1.2rem] md:text-lg md:font-bold text-white font-semibold "
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -66,9 +68,9 @@ const Contact = () => {
           </div>
         </div>
         <div>
-            <div className="flex justify-center items-center pt-20 pb-6 max-sm:pt-6 max-sm:pb-2 max-sm:text-sm">
+          <div className="flex justify-center items-center pt-20 pb-6 max-sm:pt-6 max-sm:pb-2 max-sm:text-sm">
             © 2023 All rights reserved | Made with ❤️ by Sarvesh
-            </div>
+          </div>
         </div>
       </div>
     </div>
