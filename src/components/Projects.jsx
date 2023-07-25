@@ -8,7 +8,7 @@ const Projects = () => {
     <div name="Projects" className="h-full bg-black py-28">
       <div className="flex h-full flex-col justify-center items-center">
         <div className="font-[algerian] h-1/3 text-2xl pb-16 pt-8 font flex items-center text-white justify-center">
-          <div>PROJECTS</div>
+          <div>Projects</div>
         </div>
         <div className="h-4/5 md:mx-10">
           <div className="flex flex-col lg:flex-row justify-center items-center font-sans gap-4">
