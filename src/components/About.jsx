@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import profile from "../assets/Profile_pic.png";
+import profile from "../assets/Profile_pic2.png";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         <div className="flex justify-center items-center flex-col md:flex-row">
           <div className="w-2/3 md:w-1/2 md:mb-0 mb-5 flex justify-center items-center">
             <img
-              className="w-3/5 rounded-full shadow-slate-300 shadow-lg hover:border-4 hover:border-[#d9cfcf] duration-300"
+              className="w-3/5 rounded-full shadow-slate-300 shadow-lg hover:border-4 hover:border-[#d9cfcf] duration-100"
               src={profile}
             />
           </div>
