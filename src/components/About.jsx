@@ -19,7 +19,7 @@ const About = () => {
           <div className="flex flex-col pt-8 md:pt-0 w-4/5 text-lg md:text-xl font-serif md:w-1/2 md:ml:auto  pr-4">
             <div className="text-justify justify-center items-center">
               I am a passionate and skilled full stack developer with good
-              experience in creating user friend web applications. With a strong
+              experience in creating user friendly web applications. With a strong
               foundation in front-end. I have gained expertise working with
               technologies and frameworks such as HTML, CSS, JavaScript,
               ReactJS, TailwindCSS etc. In addition to my skills, I am an
